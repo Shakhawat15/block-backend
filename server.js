@@ -34,7 +34,7 @@ readdirSync("./routes").map(r => app.use("/api/v1", require(`./routes/${r}`)))
 
 
 // Server
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || '8000';
 
 // Connect to DB and start server
 mongoose
